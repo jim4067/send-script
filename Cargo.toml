@@ -1,0 +1,9 @@
+[package]
+name = "send-script"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ autopilot = { git = "https://github.com/jim4067/autopilot-rs", branch = "jims-branch" }
