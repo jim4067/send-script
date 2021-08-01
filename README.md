@@ -1,3 +1,3 @@
-why am i so proud of this 
-well, because I fixed some of the bugs in the open source library
-Because I made an opne source conribution and solved some of the bugs present in the autopilot crate
+why am i so proud of this ???
+Well, because I fixed some of the bugs in the library and count this as an open source contribution.
+
