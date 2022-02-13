@@ -1,13 +1,18 @@
-extern crate autopilot;
-
-use autopilot::*;
+use enigo::{Enigo, Key, KeyboardControllable};
 
 fn main() {
+    let mut enigo = Enigo::new();
     let input = include_str!("joker.txt");
-    let joker_script = String::from(input);
 
-    for sentence in joker_script.lines() {
-        autopilot::key::type_string(sentence, &[], 600.0, 0.0);
-        autopilot::key::tap(&autopilot::key::Code(key::KeyCode::Return), &[], 10, 10);
+    for sentence in input.to_string().lines() {
+        enigo.key_sequence(sentence);
+        enigo.key_click(Key::Return);
+        std::thread::sleep(std::time::Duration::from_millis(500));
     }
+
+    // for _ in 0..2000 {
+    //     enigo.key_sequence("🤣 🤣 🤣 🤣 🤣 🤣");
+    //     enigo.key_click(Key::Return);
+    //     std::thread::sleep(std::time::Duration::from_millis(500));
+    // }
 }
