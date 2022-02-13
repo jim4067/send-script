@@ -8,7 +8,8 @@ This is a spam program I wrote.
 
 This is a [rust](https://www.rust-lang.org/) project and I am using the following crates.
 
--   [autopilot](https://github.com/jim4067/autopilot-rs) The library I used to automate typing of the movie script.
+- [enigo](https://github.com/enigo-rs/enigo) the library used to automate typing of the movie script.
+- <strike> [autopilot](https://github.com/jim4067/autopilot-rs) The library I used to automate typing of the movie script. </strike>
 
 ## Source data 📝
 
